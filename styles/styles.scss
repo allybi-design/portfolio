@@ -1,38 +1,68 @@
 #hero {
-    background-image: url("../images/images2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    .container {
-        padding: 6rem 0;
-    }
-    
+  background-image: url("../images/images2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  .container {
+    padding: 6rem 0;
+  }
+}
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
 }
 
 #about {
-    .avatar {
-        img {
-            width: 300px;
-            border-radius: 50%;
-            border: 1px solid #000;
-        }
+  .avatar {
+    img {
+      width: 300px;
+      border-radius: 50%;
+      border: 1px solid #000;
     }
+  }
 }
 
+.iconAnim:hover {
+  animation-name: bounce;
+  transform-origin: center bottom;
+}
 
 .card {
+  border: 1px solid #000;
+  box-shadow: 5px 5px 16px -4px rgba(0, 0, 0, 0.75);
+  border-radius: 0;
+  .card-image {
+    margin: 0.5rem;
     border: 1px solid #000;
-    box-shadow: 5px 5px 16px -4px rgba(0,0,0,0.75);
-    border-radius: 0;
-    .card-image {
-        margin: .5rem;
-        border: 1px solid #000;
-    }
+  }
 }
 
 #contact {
-    a {
-        color: white;
-        text-decoration: none;
-    }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+@keyframes bounce {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0);
+  }
+  40%,
+  43% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -30px, 0);
+  }
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -15px, 0);
+  }
+  90% {
+    transform: translate3d(0, -4px, 0);
+  }
 }
