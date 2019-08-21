@@ -1,0 +1,26 @@
+#hero {
+  background-image: url("../images/images2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+#hero .container {
+  padding: 6rem 0;
+}
+
+#about .avatar img {
+  width: 300px;
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+
+.card {
+  border: 1px solid #000;
+}
+
+#contact a {
+  color: white;
+  text-decoration: none;
+}
+/*# sourceMappingURL=styles.css.map */
