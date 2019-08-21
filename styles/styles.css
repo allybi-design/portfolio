@@ -17,6 +17,14 @@
 
 .card {
   border: 1px solid #000;
+  -webkit-box-shadow: 5px 5px 16px -4px rgba(0, 0, 0, 0.75);
+          box-shadow: 5px 5px 16px -4px rgba(0, 0, 0, 0.75);
+  border-radius: 0;
+}
+
+.card .card-image {
+  margin: .5rem;
+  border: 1px solid #000;
 }
 
 #contact a {

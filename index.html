@@ -20,7 +20,7 @@
       type="text/css"
     />
 
-    <!-- Theme CSS - Includes Bootstrap -->
+    <!--  Bootstrap -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
@@ -30,7 +30,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
     />
-    <!-- <link href="./styles/styles.css" rel="stylesheet" /> -->
+    <!-- Animate CSS  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    
+    <!-- my styles CSS -->
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
 
@@ -101,7 +104,10 @@
             </div>
             <hr class="divider light my-4" />
             <p class="mb-4">
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quae. Ratione nostrum sed ab iste dolore culpa. Deserunt praesentium iure nam alias autem quis, repudiandae incidunt, magni repellendus accusamus tenetur?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
+              quae. Ratione nostrum sed ab iste dolore culpa. Deserunt
+              praesentium iure nam alias autem quis, repudiandae incidunt, magni
+              repellendus accusamus tenetur?
             </p>
             <!-- <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services"
               >Lets Go!</a
@@ -119,7 +125,7 @@
         <div class="row">
           <div class="col-lg-3 col-md-6 text-center">
             <div class="mt-5">
-              <i class="fab fa-4x fa-html5 text-primary mb-4"></i>
+              <i id="iconAnim1" class="fab fa-4x fa-html5 text-primary mb-4 animated "></i>
               <h3 class="h4 mb-2">Sturdy Html5</h3>
               <p class="text-muted mb-0">
                 All pages comply to HTML 5 syntax
@@ -128,7 +134,7 @@
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="mt-5">
-              <i class="fab fa-4x fa-css3-alt text-success mb-4"></i>
+              <i id="iconAnim2" class="fab fa-4x fa-css3-alt text-success mb-4 animated"></i>
               <h3 class="h4 mb-2">CSS ready</h3>
               <p class="text-muted mb-0">
                 All pages CSS 3 compliant
@@ -137,7 +143,7 @@
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="mt-5">
-              <i class="fab fa-js fa-4x  text-warning mb-4"></i>
+              <i  id="iconAnim3" class="fab fa-js fa-4x  text-warning mb-4 animated"></i>
               <h3 class="h4 mb-2">JavaScript included</h3>
               <p class="text-muted mb-0">
                 Full interactive & immersive
@@ -146,7 +152,7 @@
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="mt-5">
-              <i class="fas fa-4x fa-heart text-danger mb-4"></i>
+              <i id="iconAnim4" class="fas fa-4x fa-heart text-danger mb-4 animated"></i>
               <h3 class="h4 mb-2">Made with Love</h3>
               <p class="text-muted mb-0">
                 Is it open source, and it's made with passion ?
@@ -166,7 +172,10 @@
               Portfolio
             </h2>
             <hr class="divider light my-4" />
-            <h4>Below is a sample of some of my word</h4>
+            <h4>Below is a sample of some of the work</h4>
+            <h5>That I've created here at:</h5>
+            <img src="./images/cnLogo.png" alt="Code Nation Logo">
+
             <p class="mb-4">
               Click on any sample to see the full page.
             </p>
@@ -176,83 +185,65 @@
         <div class="row my-4">
           <div class="card-deck">
             <div class="card">
-              <!-- <img src="..." class="card-img-top" alt="..." /> -->
-              <svg
-                class="bd-placeholder-img card-img-top"
-                width="100%"
-                height="180"
-                xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="xMidYMid slice"
-                focusable="false"
-                role="img"
-                aria-label="Placeholder: Image cap"
-              >
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#868e96"></rect>
-              </svg>
+              <div class="card-image">
+                <a
+                  href="https://allybi-design.github.io/zen-garden/index.html"
+                  target="_blank"
+                >
+                  <img
+                    src="./images/zengardeen-SC.png"
+                    height="180px"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </a>
+              </div>
+
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Zen Garden</h5>
                 <p class="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">Last updated 3 mins ago</small>
+                  The CSS Zen Garden is a Web development resource challenge,
+                  "built to demonstrate what can be accomplished visually
+                  through CSS-based design."
                 </p>
               </div>
             </div>
+
             <div class="card">
-              <!-- <img src="..." class="card-img-top" alt="..." /> -->
-              <svg
-                class="bd-placeholder-img card-img-top"
-                width="100%"
-                height="180"
-                xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="xMidYMid slice"
-                focusable="false"
-                role="img"
-                aria-label="Placeholder: Image cap"
-              >
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#868e96"></rect>
-              </svg>
+              <div class="card-image ">
+                <a
+                  href="https://sites.google.com/view/alisonsmithcybersec/home"
+                  target="_blank"
+                >
+                  <img
+                    src="./images/cyberSecurity-SC.png"
+                    height="180px"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </a>
+              </div>
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Cyber Security</h5>
                 <p class="card-text">
-                  This card has supporting text below as a natural lead-in to
-                  additional content.
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">Last updated 3 mins ago</small>
+                  A demonstration into diffarent aspect into "Cyber Security".
+                  Coveing both Client & Server vulnerabilities.
                 </p>
               </div>
             </div>
+
             <div class="card">
-              <!-- <img src="..." class="card-img-top" alt="..." /> -->
-              <svg
-                class="bd-placeholder-img card-img-top"
-                width="100%"
-                height="180"
-                xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="xMidYMid slice"
-                focusable="false"
-                role="img"
-                aria-label="Placeholder: Image cap"
-              >
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#868e96"></rect>
-              </svg>
+            <div class="card-image ">
+                <a href="https://allybi-design.github.io/Vue-NetFli-frontPageDemo/" target="_blank">
+                    <img src="./images/netFlixClone-SC.png" height="180px" class="card-img-top" alt="..." />
+                </a>
+            </div>
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">NetFlix Clone</h5>
                 <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This card has even longer
-                  content than the first to show that equal height action.
+                  A Challenge to replocate the front page of "NetFlix". It demonstrates a "tab" navigation section fro various options & pricing structures.
                 </p>
-                <p class="card-text">
-                  <small class="text-muted">Last updated 3 mins ago</small>
-                </p>
+               
               </div>
             </div>
           </div>
@@ -422,5 +413,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>
