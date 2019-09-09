@@ -1,12 +1,28 @@
-#hero {
-  background-image: url("../images/images2.jpg");
-  background-repeat: no-repeat;
+.parallax {
+  
+  min-height: 400px;
+  background-attachment: fixed;
   background-size: cover;
+  background-position: 50% 50%;
   color: white;
-  .container {
-    padding: 6rem 0;
+  div {
+    hr {
+      color: #fff;
+      display: block;
+      margin: 0.5rem auto;
+      border-style: inset;
+      border-width: 1px;
+    }
   }
 }
+
+.jumbo1 {
+background-image: url("../images/shahadat-shemul-BfrQnKBulYQ-unsplash.jpg");
+}
+.jumbo2 {
+background-image: url("../images/mcdobbie-hu-5RgShZblKAQ-unsplash.jpg");
+}
+
 .animated {
   animation-duration: 1s;
   animation-fill-mode: both;
@@ -14,16 +30,14 @@
 
 #about {
   .avatar {
-    box-shadow: 4px 4px 4px #666;
     img {
+      box-shadow: 4px 4px 4px #666;
       width: 300px;
       border-radius: 50%;
       border: 1px solid #000;
-      
     }
   }
 }
-
 
 .iconAnim:hover {
   animation-name: bounce;
@@ -34,8 +48,9 @@
   border: 1px solid #000;
   box-shadow: 5px 5px 16px -4px rgba(0, 0, 0, 0.75);
   border-radius: 0;
+  margin: 0.5rem;
+  padding: 0.5rem;
   .card-image {
-    margin: 0.5rem;
     border: 1px solid #000;
   }
 }

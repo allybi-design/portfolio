@@ -30,16 +30,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
     />
-    <!-- Animate CSS  -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> -->
-
     <!-- my styles CSS -->
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
 
   <body id="page-top">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="#">
         <img src="./images/logo.png" alt="logo" height="48px" />
       </a>
@@ -76,7 +73,7 @@
     </nav>
 
     <!-- hero -->
-    <div id="hero" class="jumbotron-fluid mb-0">
+    <div id="hero" class="parallax jumbo1">
       <div class="container ">
         <h1 class="display-1">Alison Smith</h1>
         <p class="lead">
@@ -115,12 +112,13 @@
     </section>
 
     <!-- Services Section -->
-    <section class="page-section py-4" id="services">
+    <section class="parallax jumbo2 page-section py-4 id="services">
       <div class="container">
         <h2 class="text-center mt-0">At Your Service</h2>
         <hr class="divider my-4" />
+
         <div class="row">
-          <div class="col-lg-3 col-md-6 text-center">
+          <div class="text-center">
             <div class="mt-5">
               <i
                 class="fab fa-4x fa-html5 text-primary mb-4 animated iconAnim"
@@ -131,6 +129,7 @@
               </p>
             </div>
           </div>
+
           <div class="col-lg-3 col-md-6 text-center">
             <div class="mt-5">
               <i
@@ -142,7 +141,8 @@
               </p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 text-center">
+
+          <div class="text-center">
             <div class="mt-5">
               <i
                 class="fab fa-js fa-4x  text-warning mb-4 animated iconAnim"
@@ -153,7 +153,8 @@
               </p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 text-center">
+
+          <div class=" text-center">
             <div class="mt-5">
               <i
                 class="fas fa-4x fa-heart text-danger mb-4 animated iconAnim"
@@ -164,6 +165,7 @@
               </p>
             </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -171,8 +173,8 @@
     <!-- Portfolio Section -->
     <div id="portfolio" class="bg-warning">
       <div class="container py-4">
-        <div class="row">
-          <div class="col-sm-12  text-center">
+        <div class="row col-6 offset-3 my-4">
+          <div class="text-center">
             <h2 class="mt-0">
               Portfolio
             </h2>
@@ -189,10 +191,10 @@
             </p>
           </div>
         </div>
-
-        <div class="row my-4">
-          <div class="card-deck">
-            <div class="card">
+        <!-- Cards row 1 -->
+        <div class="card-deck">
+          <div class="row my-4">
+            <div class="card col-lg-4 col-md-6">
               <div class="card-image">
                 <a
                   href="https://allybi-design.github.io/zen-garden/index.html"
@@ -217,7 +219,7 @@
               </div>
             </div>
 
-            <div class="card">
+            <div class="card col-lg-4 col-md-6">
               <div class="card-image ">
                 <a
                   href="https://sites.google.com/view/alisonsmithcybersec/home"
@@ -240,7 +242,7 @@
               </div>
             </div>
 
-            <div class="card">
+            <div class="card col-lg-4 col-md-6">
               <div class="card-image ">
                 <a
                   href="https://allybi-design.github.io/Vue-NetFli-frontPageDemo/"
@@ -265,9 +267,9 @@
             </div>
           </div>
         </div>
-
-        <div class="row my-4">
-          <div class="card-deck">
+        <!-- cards row 2 -->
+        <div class="card-deck">
+          <div class="row my-4">
             <div class="card">
               <div class="card-image ">
                 <a
@@ -345,6 +347,7 @@
             </div>
           </div>
         </div>
+
       </div>
     </div>
 
