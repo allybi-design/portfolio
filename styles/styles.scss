@@ -1,5 +1,4 @@
 .parallax {
-  
   min-height: 400px;
   background-attachment: fixed;
   background-size: cover;
@@ -52,6 +51,13 @@ background-image: url("../images/mcdobbie-hu-5RgShZblKAQ-unsplash.jpg");
   padding: 0.5rem;
   .card-image {
     border: 1px solid #000;
+  }
+  .card-body {
+    padding: 1.5rem 0;
+    .justified {
+      text-align: justify;
+      
+    }
   }
 }
 

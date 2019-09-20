@@ -57,6 +57,14 @@
   border: 1px solid #000;
 }
 
+.card .card-body {
+  padding: 1.5rem 0;
+}
+
+.card .card-body .justified {
+  text-align: justify;
+}
+
 #contact a {
   color: white;
   text-decoration: none;
